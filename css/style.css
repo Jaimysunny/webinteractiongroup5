@@ -1,0 +1,555 @@
+/* External CSS */
+
+/* Styling the whole page font */
+* {
+    font-family: "poppins", sans-serif;
+  }
+  
+  /* Styling for the header section */
+  header {
+    display: flex;
+    background-color: #FED22E;
+  }
+  
+  img {
+    width: auto;
+  }
+  
+  /* Styling for the logo image */
+  #logo {
+    display: block;
+    margin-top: 26px;
+    margin-left: 15px;
+    width: 125px;
+    height: auto;
+  }
+  
+  /* Styling for the grid container */
+  .grid-container {
+    margin-top: 0;
+  }
+  
+  /* Styling for the navigation menu */
+  nav ul.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul.menu li {
+    display: inline-block;
+  }
+  
+  nav ul.menu li a {
+    display: block;
+    padding: 30px;
+    text-decoration: none;
+    color: #745EDA;
+  }
+  
+  /* Styling for headings and paragraphs */
+  h1,
+  h2,
+  p {
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  p {
+    color: #2f2f2e;
+  }
+  
+  /* Styling for the selected text */
+  ::selection {
+    color: #745EDA;
+    background: #FED22E;
+  }
+  
+  /* Styling for the sidebar */
+  .sidebar {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .menu-vertical {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .menu-vertical li {
+    margin-bottom: 5px;
+  }
+  
+  .menu-vertical li a {
+    text-decoration: none;
+    color: #745EDA;
+  }
+  
+  .menu-vertical li a:hover {
+    color: #FED22E;
+  }
+  
+  /* Styling for button class "button1" and "button2" */
+  .button1,
+  .button2 {
+    align-items: center;
+    width: 250px;
+    display: inline-block;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 14px 12px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .button1 {
+    background-color: #745EDA;
+    border: none;
+    color: white;
+  }
+  
+  .button1:hover {
+    color: #FED22E;
+    opacity: 1;
+  }
+  
+  .button2 {
+    background-color: #DCCCFF;
+    color: #333;
+  }
+  
+  .button2:hover {
+    color: #745EDA;
+    opacity: 1;
+  }
+  
+  /* Styling for cards */
+  .card {
+    background-color: #fea62b;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  /* Styling for content areas */
+  .content {
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for the footer section */
+  footer {
+    color: #000000;
+    background-color: #fea62b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    margin-top: 40px;
+    padding-top: 20px;
+    padding-left: 40px;
+    text-align: center;
+  }
+  
+  .appstore {
+    padding-bottom: 2px;
+    margin-right: 20px;
+    width: 20px;
+    height: auto;
+  }
+  
+  /* Responsive menu */
+  .topbar-responsive {
+    background: #000;
+    padding: 1rem 1.5rem;
+  }
+  
+  .topbar-responsive .topbar-responsive-logo {
+    color: #fff;
+    vertical-align: middle;
+  }
+  
+  .topbar-responsive .menu {
+    background: #000;
+  }
+  
+  .topbar-responsive .menu li:last-of-type {
+    margin-right: 0;
+  }
+  
+  .topbar-responsive .menu a {
+    color: #fff;
+    transition: color 0.15s ease-in;
+  }
+  
+  .topbar-responsive .menu a:hover {
+    color: #000;
+  }
+  
+  @media screen and (max-width: 39.9375em) {
+    .topbar-responsive .menu a {
+      padding: 0.875rem 0;
+    }
+  }
+  
+  .topbar-responsive .menu .topbar-responsive-button {
+    color: #fff;
+    border-color: #fff;
+    border-radius: 5000px;
+    transition: color 0.15s ease-in, border-color 0.15s ease-in;
+  }
+  
+  .topbar-responsive .menu .topbar-responsive-button:hover {
+    color: #000;
+    border-color: #000;
+  }
+  
+  @media screen and (max-width: 39.9375em) {
+    .topbar-responsive {
+      padding: 0.75rem;
+    }
+  
+    .topbar-responsive .top-bar-title {
+      position: relative;
+      width: 100%;
+    }
+  
+    .topbar-responsive .top-bar-title span {
+      position: absolute;
+      right: 0;
+      border: 1px solid #000;
+      border-radius: 5px;
+      padding: 0.25rem 0.45rem;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  
+    .topbar-responsive .top-bar-title span .menu-icon {
+      margin-bottom: 4px;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideDown {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+  
+  @media only screen and (max-width: 100%) {
+    .topbar-responsive-links {
+      animation-fill-mode: both;
+      animation-duration: 0.5s;
+      width: 100%;
+    }
+  }
+  
+  /* Styling for candidate-specific elements */
+  
+  /* Styling for the h1 heading */
+  h1 {
+    text-align: center;
+    margin-top: 10px;
+    color: #fea62b;
+  }
+  
+  /* Center the h2 heading */
+  h2.text-center {
+    text-align: center;
+    color: #fea62b;
+  }
+  
+  /* Style the switch */
+  .switch {
+    margin-bottom: 20px;
+  }
+  
+  .switch-input {
+    display: none;
+  }
+  
+  .switch-paddle {
+    background-color: #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+    display: inline-block;
+    height: 20px;
+    position: relative;
+    width: 40px;
+  }
+  
+  .switch-paddle:before {
+    background-color: white;
+    border-radius: 50%;
+    content: "";
+    height: 16px;
+    left: 2px;
+    position: absolute;
+    top: 2px;
+    width: 16px;
+    transition: left 0.3s;
+  }
+  
+  .switch-input:checked + .switch-paddle {
+    background-color: #7ebf6b;
+  }
+  
+  .switch-input:checked + .switch-paddle:before {
+    left: calc(100% - 18px);
+  }
+  
+  .switch-active,
+  .switch-inactive {
+    color: white;
+    font-size: 12px;
+    line-height: 20px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100%;
+  }
+  
+  .switch-active {
+    left: 20px;
+  }
+  
+  .switch-inactive {
+    right: 20px;
+  }
+  
+  /* Style the chat items */
+  .chat-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .chat-profile-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin-right: 10px;
+  }
+  
+  .chat-details {
+    flex: 1;
+  }
+  
+  .chat-name {
+    margin: 0;
+  }
+  
+  .chat-message {
+    margin: 0;
+    color: #666;
+  }
+  
+  /* Styling for the newpost form */
+  
+  /* Styling for form labels */
+  form label {
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  /* Styling for form inputs, select, and textarea */
+  form input[type="text"],
+  form select,
+  form textarea {
+    width: 400px;
+    padding: 10px;
+    margin-top: 2px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Styling for the submit button */
+  form input[type="submit"] {
+    display: block;
+    margin: 20px auto;
+  }
+  
+  /* Styling for the "Submit" button */
+  .button1 {
+    align-items: center;
+    width: 250px;
+    display: inline-block;
+    background-color: #fea62b;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 14px 12px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Styling for the pricing elements */
+  
+  /* Styling for the pricing header */
+  .columns .heading {
+    background-color: #fea62b;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  /* List items */
+  .columns li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Grey list item */
+  .columns .grey {
+    background-color: #eee;
+    font-size: 20px;
+  }
+  
+  /* The "Sign Up" button */
+  .button {
+    border-radius: 10px;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    background-color: #fea62b;
+  }
+  
+  /* Styling for the footer */
+  footer {
+    color: #000000;
+    background-color: #fea62b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    margin-top: 40px;
+    padding-top: 20px;
+    padding-left: 40px;
+    text-align: center;
+  }
+  
+  .appstore {
+    padding-bottom: 2px;
+    margin-right: 20px;
+    width: 20px;
+    height: auto;
+  }
+  
+  /* Responsive menu */
+  .topbar-responsive {
+    background: #fea62b;
+    padding: 1rem 1.5rem;
+  }
+  
+  .topbar-responsive .topbar-responsive-logo {
+    color: #fff;
+    vertical-align: middle;
+  }
+  
+  .topbar-responsive .menu {
+    background: #fea62b;
+  }
+  
+  .topbar-responsive .menu li:last-of-type {
+    margin-right: 0;
+  }
+  
+  .topbar-responsive .menu a {
+    color: #fff;
+    transition: color 0.15s ease-in;
+  }
+  
+  .topbar-responsive .menu a:hover {
+    color: #000;
+  }
+  
+  @media screen and (max-width: 39.9375em) {
+    .topbar-responsive .menu a {
+      padding: 0.875rem 0;
+    }
+  }
+  
+  .topbar-responsive .menu .topbar-responsive-button {
+    color: #fff;
+    border-color: #fff;
+    border-radius: 5000px;
+    transition: color 0.15s ease-in, border-color 0.15s ease-in;
+  }
+  
+  .topbar-responsive .menu .topbar-responsive-button:hover {
+    color: #000;
+    border-color: #000;
+  }
+  
+  @media screen and (max-width: 39.9375em) {
+    .topbar-responsive {
+      padding: 0.75rem;
+    }
+  
+    .topbar-responsive .top-bar-title {
+      position: relative;
+      width: 100%;
+    }
+  
+    .topbar-responsive .top-bar-title span {
+      position: absolute;
+      right: 0;
+      border: 1px solid #000;
+      border-radius: 5px;
+      padding: 0.25rem 0.45rem;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  
+    .topbar-responsive .top-bar-title span .menu-icon {
+      margin-bottom: 4px;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideDown {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+  
+  @media only screen and (max-width: 100%) {
+    .topbar-responsive-links {
+      animation-fill-mode: both;
+      animation-duration: 0.5s;
+      width: 100%;
+    }
+  }
+  
